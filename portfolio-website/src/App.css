@@ -1,38 +1,75 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
-  background-color: #282c34;
+  background: radial-gradient(rgba(192, 0, 250, 0.5), rgba(221, 157, 20, 0.5));
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  font-size: calc(30px + 2vmin);
+  color: rgb(236, 228, 234);
+}
+
+.greeting {
+  font-family: Inconsolata;
+  text-shadow: 2px 2px 4px #D2B9AF(0, 0, 0, 0.5);
+  
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), infinite;
+  
+  margin-left: 150px;
+  margin-top: 300px;
+}
+
+.name-color {
+  color: #a626e2;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); 
+}
+
+.bio {
+  font-family: Inconsolata;
+
+  font-size: calc(15px + 2vmin);
+
+  margin-left: 150px;
+  margin-top: 5px;
+  max-width: 600px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-item {
+  margin: 0 20px;
+  font-family: Inconsolata;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  font-size: 25px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 100%;
   }
 }
